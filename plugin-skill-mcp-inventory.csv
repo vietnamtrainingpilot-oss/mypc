@@ -1,0 +1,64 @@
+component,type,name,path,source,version,status,dependencies,score,overlap,recommendation,evidence,confidence,test_result
+ecc-plugin,plugin,ecc-hooks,C:\Users\Admin\.config\opencode\plugins\ecc-hooks.ts,ecc-universal@2.2.3,installed,26 agents+104 commands,85,yes,ECC as primary engineering core,Full install verified,high,pending
+superpowers-plugin,plugin,superpowers,git+https://github.com/obra/superpowers.git,superpowers@6.3.0,installed,,70,no,Keep - has unique skills ECC lacks,Declared in opencode.json,high,pending
+ponytail-plugin,plugin,ponytail,~/.config/opencode/ponytail/.opencode/plugins/ponytail.mjs,ponytail@4.10.0,installed,,65,yes,Keep - YAGNI audit unique value,Declared in opencode.json,high,pending
+atelier-plugin,plugin,atelier,D:\Atelier\.opencode\plugins\atelier.ts,atelier@1.0.0,installed,missing awwwards-animations,75,no,Keep - router dispatch unmatched,ECC doc confirms beta status,high,pending
+claude-mem-plugin,plugin,claude-mem,C:\Users\Admin\.config\opencode\plugins\claude-mem.js,claude-mem@.worker-plugin,installed,,60,no,Keep - memory/knowledge unique,Created during this audit,high,pending
+robloxstudio,mcp,robloxstudio,local: @chrrxs/robloxstudio-mcp,robloxstudio-mcp@latest,enabled,,90,no,Keep - Roblox automation unique,Configured in opencode.json,high,pending
+weppy-roblox,mcp,weppy-roblox,local: @weppy/roblox-mcp,weppy-roblox-mcp@latest,enabled,,90,no,Keep - Roblox Studio automation unique,Configured in opencode.json,high,pending
+chrome-devtools,mcp,chrome-devtools,local: @devtools-ds/chrome-devtools-mcp,chrome-devtools-mcp@latest,enabled,,85,no,Keep - browser performance debugging unique,Configured in opencode.json,high,pending
+bitwize-music-mcp,mcp,bitwize-music-mcp,local: mcp-launch.cmd,bitwize-music@0.102.0,enabled,,95,no,Keep - music production unique,Configured in opencode.json,high,pending
+playwright,mcp,playwright,local: playwright-mcp.cmd,playwright-mcp@latest,enabled,,80,no,Keep - browser automation unique,Configured in opencode.json,high,pending
+computer-use,mcp,computer-use,local: computer-use-mcp.cmd,computer-use-mcp@latest,enabled,,80,no,Keep - desktop automation unique,Configured in opencode.json,high,pending
+uia-mcp,mcp,uia-mcp,local: uia-mcp.cmd,uia-mcp@latest,enabled,,80,no,Keep - Windows UI automation unique,Configured in opencode.json,high,pending
+magicui,mcp,magicui,remote: api.magicui.design/mcp,magicui@unknown,enabled,,70,no,Keep - UI component assets,Configured in opencode.json,medium,pending
+21st-dev,mcp,21st,remote: 21st.dev/api/mcp,21st@unknown,disabled,API_KEY_21ST required,30,no,Do not enable - unknown value/credential risk,Config disabled in opencode.json,high,not-applicable
+plan,command,plan,C:\Users\Admin\.config\opencode\commands\plan.md,ecc-universal@2.2.3,installed,,90,yes,ECC as primary planning tool,Full install verified,high,pending
+tdd,command,tdd,C:\Users\Admin\.config\opencode\commands\tdd.md,ecc-universal@2.2.3,installed,,85,yes,ECC TDD workflow,Full install verified,high,pending
+code-review,command,code-review,C:\Users\Admin\.config\opencode\commands\code-review.md,ecc-universal@2.2.3,installed,,85,yes,ECC code review,Full install verified,high,pending
+security,command,security,C:\Users\Admin\.config\opencode\commands\security.md,ecc-universal@2.2.3,installed,,85,yes,ECC security review (complements CS),Full install verified,high,pending
+build-fix,command,build-fix,C:\Users\Admin\.config\opencode\commands\build-fix.md,ecc-universal@2.2.3,installed,,80,yes,ECC build error resolution,Full install verified,high,pending
+make-plan,skill,make-plan,C:\Users\Admin\.config\opencode\skills\make-plan\SKILL.md,superpowers@6.3.0,installed,,85,yes,Keep - proven planning skill,Superpowers source,high,pending
+brainstorming,skill,brainstorming,C:\Users\Admin\.cache\opencode\packages\superpowers...\brainstorming\SKILL.md,superpowers-cache,installed,,80,yes,Keep - required before creative work,Superpowers cache,high,pending
+systematic-debugging,skill,systematic-debugging,C:\Users\Admin\.cache\opencode\packages\superpowers...\systematic-debugging\SKILL.md,superpowers-cache,installed,,80,yes,Keep - bug investigation methodology,Superpowers cache,high,pending
+verification-before-completion,skill,verification-before-completion,C:\Users\Admin\.cache\opencode\packages\superpowers...\verification-before-completion\SKILL.md,superpowers-cache,installed,,75,yes,Keep - pre-commit verification gate,Superpowers cache,high,pending
+using-superpowers,skill,using-superpowers,C:\Users\Admin\.cache\opencode\packages\superpowers...\using-superpowers\SKILL.md,superpowers-cache,installed,,70,yes,Keep - session startup procedure,Superpowers cache,high,pending
+ponytail,skill,ponytail,C:\Users\Admin\.config\opencode\ponytail\skills\ponytail\SKILL.md,ponytail@4.10.0,installed,,75,yes,Keep - YAGNI code audit unique,Declared in opencode.json,high,pending
+web-design,skill,web-design,C:\Users\Admin\.agents\skills\web-design\SKILL.md,ateler@1.0.0,installed,missing awwards-animations,90,no,Keep - router dispatch for web work,Atelier config,high,pending
+video-production,skill,video-production,C:\Users\Admin\.agents\skills\video-production\SKILL.md,ateler@1.0.0,installed,missing 4 deps,90,no,Keep - router dispatch for video,Atelier config,high,pending
+seo,skill,seo,C:\Users\Admin\.agents\skills\seo\SKILL.md,ateler@1.0.0,installed,missing 12 deps,90,no,Keep - router dispatch for SEO,Atelier config,high,pending
+backend,skill,backend,C:\Users\Admin\.agents\skills\backend\SKILL.md,ateler@1.0.0,installed,missing executing-plans,90,no,Keep - router dispatch for backend,Atelier config,high,pending
+animate,skill,animate,C:\Users\Admin\.config\opencode\skills\animate\SKILL.md,emil-kowalski,installed,,90,no,Keep - animation philosophy unique,Creative tooling,high,pending
+review-animations,skill,review-animations,C:\Users\Admin\.config\opencode\skills\review-animations\SKILL.md,emil-kowalski,installed,,85,no,Keep - animation audit unique,Creative tooling,high,pending
+hyperframes,skill,hyperframes,C:\Users\Admin\.config\opencode\skills\hyperframes\SKILL.md,hyperframes@0.8.185,installed,,90,no,Keep - HTML-to-video unique,Creative tooling,high,pending
+img2threejs,skill,img2threejs,C:\Users\Admin\.config\opencode\skills\img2threejs\SKILL.md,emil-kowalski,installed,,70,no,Keep - 3D model generation unique,Creative tooling,medium,pending
+impeccable,skill,impeccable,C:\Users\Admin\.config\opencode\skills\impeccable\SKILL.md,emil-kowalski,installed,,75,no,Keep - frontend polish unique,Creative tooling,medium,pending
+wiki,skill,wiki,C:\Users\Admin\.config\opencode\skills\wiki\SKILL.md,claude-mem+obsidian,installed,,70,no,Keep - Obsidian knowledge base unique,Knowledge management,high,pending
+mem-search,skill,mem-search,C:\Users\Admin\.config\opencode\skills\mem-search\SKILL.md,claude-mem,installed,,65,no,Keep - memory search unique,Knowledge management,high,pending
+ccs-align,skill,ccs-align,C:\Users\Admin\.config\opencode\skills\ccs-align\SKILL.md,claude-mem,installed,,60,no,Keep - memory alignment unique,Knowledge management,medium,pending
+cs-explore,agent,cs-explore,C:\Users\Admin\.config\opencode\agent\cs-explore.md,claude-security,installed,,80,yes,ECC has similar cs-explore,Both present,high,pending
+cs-patch-generator,agent,cs-patch-generator,C:\Users\Admin\.config\opencode\agent\cs-patch-generator.md,claude-security,installed,,80,yes,ECC has similar patch agents,Both present,high,pending
+cs-patch-verifier,agent,cs-patch-verifier,C:\Users\Admin\.config\opencode\agent\cs-patch-verifier.md,claude-security,installed,,80,yes,ECC has similar verifier agents,Both present,high,pending
+cs-scan-inventory,agent,cs-scan-inventory,C:\Users\Admin\.config\opencode\agent\cs-scan-inventory.md,claude-security,installed,,80,yes,ECC has similar scan agents,Both present,high,pending
+cs-scan-loader,agent,cs-scan-loader,C:\Users\Admin\.config\opencode\agent\cs-scan-loader.md,claude-security,installed,,80,yes,ECC has similar scan agents,Both present,high,pending
+cs-scan-redactor,agent,cs-scan-redactor,C:\Users\Admin\.config\opencode\agent\cs-scan-redactor.md,claude-security,installed,,80,yes,ECC has similar redactor agents,Both present,high,pending
+cs-scan-researcher,agent,cs-scan-researcher,C:\Users\Admin\.config\opencode\agent\cs-scan-researcher.md,claude-security,installed,,80,yes,ECC has similar researcher agents,Both present,high,pending
+cs-scan-verifier,agent,cs-scan-verifier,C:\Users\Admin\.config\opencode\agent\cs-scan-verifier.md,claude-security,installed,,80,yes,ECC has similar verifier agents,Both present,high,pending
+e2e-testing,skill,e2e-testing,C:\Users\Admin\.config\opencode\skills\e2e-testing\SKILL.md,ecc-universal,installed,,80,no,New ECC capability - Playwright integration,Full install verified,high,pending
+tdd-workflow,skill,tdd-workflow,C:\Users\Admin\.config\opencode\skills\tdd-workflow\SKILL.md,ecc-universal,installed,,80,no,New ECC capability - TDD enforcement,Full install verified,high,pending
+security-review,skill,security-review,C:\Users\Admin\.config\opencode\skills\security-review\SKILL.md,ecc-universal,installed,,85,no,New ECC capability - security scanning,Full install verified,high,pending
+coding-standards,skill,coding-standards,C:\Users\Admin\.config\opencode\skills\coding-standards\SKILL.md,ecc-universal,installed,,75,no,New ECC capability - code standards,Full install verified,high,pending
+frontend-patterns,skill,frontend-patterns,C:\Users\Admin\.config\opencode\skills\frontend-patterns\SKILL.md,ecc-universal,installed,,75,no,New ECC capability,Full install verified,high,pending
+backend-patterns,skill,backend-patterns,C:\Users\Admin\.config\opencode\skills\backend-patterns\SKILL.md,ecc-universal,installed,,75,no,New ECC capability,Full install verified,high,pending
+api-design,skill,api-design,C:\Users\Admin\.config\opencode\skills\api-design\SKILL.md,ecc-universal,installed,,75,no,New ECC capability,Full install verified,high,pending
+verification-loop,skill,verification-loop,C:\Users\Admin\.config\opencode\skills\verification-loop\SKILL.md,ecc-universal,installed,,80,no,New ECC capability,Full install verified,high,pending
+unified-memory,skill,unified-memory,C:\Users\Admin\.config\opencode\skills\unified-memory\SKILL.md,ecc-universal,installed,,60,yes,Overlaps with claude-mem - keep both,Full install verified,medium,pending
+continuous-learning,skill,continuous-learning,C:\Users\Admin\.config\opencode\skills\continuous-learning\SKILL.md,ecc-universal,installed,,55,yes,Overlaps with claude-mem - keep both,Full install verified,medium,pending
+hookify,skill,hookify,C:\Users\Admin\.config\opencode\skills\hookify\SKILL.md,ecc-universal,installed,,50,no,New - hook configuration,Full install verified,medium,pending
+gan-style-harness,skill,gan-style-harness,C:\Users\Admin\.config\opencode\skills\gan-style-harness\SKILL.md,ecc-universal,installed,,45,no,New - GAN-based style analysis,Full install verified,low,pending
+terminal-opener,skill,terminal-opener,C:\Users\Admin\.config\opencode\skills\terminal-opener\SKILL.md,ecc-universal,installed,,50,no,New - terminal management,Full install verified,medium,pending
+mcp-server-patterns,skill,mcp-server-patterns,C:\Users\Admin\.config\opencode\skills\mcp-server-patterns\SKILL.md,ecc-universal,installed,,60,no,New - MCP development,Full install verified,medium,pending
+agent-runtime-gateway-smoke-test,skill,agent-runtime-gateway-smoke-test,C:\Users\Admin\.config\opencode\skills\agent-runtime-gateway-smoke-test\SKILL.md,ecc-universal,installed,,40,no,New - agent testing,Full install verified,low,pending
+cost-tracking,skill,cost-tracking,C:\Users\Admin\.config\opencode\skills\cost-tracking\SKILL.md,ecc-universal,installed,,55,no,New - cost monitoring,Full install verified,medium,pending
+token-card,skill,token-card,C:\Users\Admin\.config\opencode\skills\token-card\SKILL.md,ecc-universal,installed,,50,no,New - token budget management,Full install verified,medium,pending
+token-budget-advisor,skill,token-budget-advisor,C:\Users\Admin\.config\opencode\skills\token-budget-advisor\SKILL.md,ecc-universal,installed,,55,no,New - token optimization,Full install verified,medium,pending

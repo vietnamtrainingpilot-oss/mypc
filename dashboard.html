@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenCode Ecosystem Audit — Dashboard</title>
+  <style>
+    :root {
+      --primary: #1a1a2e;
+      --secondary: #16213e;
+      --accent: #e94560;
+      --accent-light: #f8c471;
+      --success: #4cc9f0;
+      --card-bg: #2d3436;
+      --card-bg2: #4a4e4d;
+      --text: #e9c46a;
+      --text-dim: #8d99ae;
+      --border: #323746;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--primary);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: var(--accent-light);
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    .section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .section.narrow {
+      max-width: 800px;
+    }
+
+    .section.wide {
+      max-width: 100%;
+    }
+
+    .header-bar {
+      background: var(--secondary);
+      padding: 20px;
+      border-radius: 8px 8px 0 0;
+      margin: -20px -20px 20px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--accent-light);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .stat-card {
+      background: var(--card-bg2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: var(--accent-light);
+    }
+
+    .stat-label {
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      margin-top: 5px;
+    }
+
+    .table-responsive {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--secondary);
+      color: var(--accent-light);
+      font-weight: 600;
+    }
+
+    tr:hover {
+      background: rgba(233, 196, 106, 0.1);
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .status-installed { background: #4cc9f0; color: #0a2e35; }
+    .status-enabled { background: #4cc9f0; color: #0a2e35; }
+    .status-active { background: #4cc9f0; color: #0a2e35; }
+    .status-pending { background: #f8c471; color: #264653; }
+    .status-declined { background: #e94560; color: #fff; }
+    .status-removed { background: #a855f6; color: #fff; }
+
+    .chip {
+      display: inline-block;
+      padding: 2px 6px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+
+    .chip-secondary { background: #323746; color: var(--text); }
+    .chip-success { background: #4cc9f0; color: #0a2e35; }
+    .chip-warning { background: #f8c471; color: #264653; }
+    .chip-danger { background: #e94560; color: #fff; }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 600px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header-bar">
+      <div class="logo">OpenCode Ecosystem Dashboard</div>
+      <div class="tagline">Audit Report — 2026-10-22</div>
+    </div>
+
+    <div class="section wide">
+      <h1>OpenCode Ecosystem Audit</h1>
+      <p class="tagline">Comprehensive audit of ECC integration, ecosystem consolidation, and capability mapping</p>
+    </div>
+
+    <!-- Summary Stats -->
+    <div class="section narrow">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">486</div>
+          <div class="stat-label">Total Skills</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">104</div>
+          <div class="stat-label">Commands</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">26</div>
+          <div class="stat-label">ECC Agents</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8</div>
+          <div class="stat-label">CS Subagents</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Declared Plugins</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8</div>
+          <div class="stat-label">MCP Servers</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase A: Baseline -->
+    <div class="section narrow">
+      <h2>Phase A: Baseline (Completed)</h2>
+      <p>Initial state: 223 unique skills, 9 MCP servers, 8 Claude Security subagents, 7 custom commands, provider <code>freellmapi/auto</code>.</p>
+      <p>Backups created at <code>D:\OpenCode-Ecosystem-Audit\rollback\</code>.</p>
+    </div>
+
+    <!-- Phase B: ECC Install -->
+    <div class="section narrow">
+      <h2>Phase B: ECC Installation (Completed)</h2>
+      <p>ECC v2.2.3 installed as OpenCode plugin via <code>git clone + npm build + install-apply.js</code>.</p>
+      <ul>
+        <li>Hooks runtime declined (<code>--no-hooks</code>)</li>
+        <li>486 skills now installed (was 176)</li>
+        <li>104 commands available</li>
+        <li>26 ECC agents present</li>
+        <li>UTF-8 BOM fixed in <code>opencode.json</code></li>
+      </ul>
+    </div>
+
+    <!-- Phase C: Capability Mapping -->
+    <div class="section narrow">
+      <h2>Phase C: ECC Capability Matrix</h2>
+      <p>5 capabilities REPLACE WITH ECC; 23 KEEP SPECIALIST; 4 CONSOLIDATE; 2 KEEP TEMPORARILY.</p>
+      <p><a href="ecc-capability-matrix.md">Full matrix →</a></p>
+    </div>
+
+    <!-- Phase D: Consolidation -->
+    <div class="section narrow">
+      <h2>Phase D: Consolidation Decisions</h2>
+      <p><strong>REPLACE WITH ECC:</strong> /plan, /tdd, /code-review, /security commands; /build-fix, /refactor-clean</p>
+      <p><strong>KEEP SPECIALIST:</strong> All Atelier routers, Bitwize Music, HyperFrames, Roblox, Playwright, etc.</p>
+      <p><strong>CONSOLIDATE:</strong> 4 aesthetic skills rationalized per Atelier "one per job" rule.</p>
+    </div>
+
+    <!-- Phase E: SVG Toolkit (Deferred) -->
+    <div class="section narrow">
+      <h2>Phase E: SVG/Asset Toolkit (Deferred)</h2>
+      <p>Research deferred to follow-up engagement. See <code>visual-asset-toolkit.md</code> for full roadmap.</p>
+    </div>
+
+    <!-- Deliverables -->
+    <div class="section narrow">
+      <h2>Deliverables</h2>
+      <ul>
+        <li><a href="README.md">README.md</a> — Executive summary</li>
+        <li><a href="plugin-skill-mcp-inventory.csv">plugin-skill-mcp-inventory.csv</a> — Full component inventory</li>
+        <li><a href="ecc-capability-matrix.md">ecc-capability-matrix.md</a> — Capability mapping</li>
+        <li><a href="overlap-and-migration-report.md">overlap-and-migration-report.md</a> — Consolidation rationale</li>
+        <li><a href="audit-report.md">audit-report.md</a> — This audit report</li>
+        <li><a href="workflow-rankings.csv">workflow-rankings.csv</a> — Weighted scores</li>
+        <li><a href="visual-asset-toolkit.md">visual-asset-toolkit.md</a> — SVG pipeline (deferred)</li>
+        <li><a href="cleanup-plan.md">cleanup-plan.md</a> — Planned removals</li>
+        <li><a href="dashboard.html">dashboard.html</a> — This page</li>
+        <li><a href="rollback/">rollback/</a> — Timestamped backups</li>
+      </ul>
+    </div>
+
+    <!-- Risks -->
+    <div class="section narrow">
+      <h2>Key Risks & Limitations</h2>
+      <ul>
+        <li>ECC OpenCode support is BETA — capability-limited adapter, not full Claude Code parity</li>
+        <li>Hook runtime declined — no automatic source modification or process control</li>
+        <li>Domain-specific routers (Atelier) preserved — ECC is general-purpose only</li>
+        <li>Bitwize Music / HyperFrames / Roblox / Playwright preserved — no ECC equivalents</li>
+        <li>UTF-8 BOM issue identified and fixed (backup preserved)</li>
+      </ul>
+    </div>
+
+    <!-- Cost -->
+    <div class="section narrow">
+      <h2>Cost & Licensing</h2>
+      <p>All tools MIT/Apache 2.0 licensed — $0 total cost. No paid subscriptions incurred.</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      OpenCode Ecosystem Audit &middot; 2026-10-22 &middot; <a href="https://github.com/affaan-m/ECC">ECC v2.2.3</a> &middot; OpenCode plugin integration
+    </div>
+  </div>
+</body>
+</html>

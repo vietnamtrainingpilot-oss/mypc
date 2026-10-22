@@ -1,0 +1,53 @@
+component,type,name,category,score,weight-practical,value-reduction,reliability-compat,security-privacy,cost-op-efficiency,final-decision,evidence,confidence
+ecc-plugin,plugin,opencode integration,general,85,25%,consolidate ECC as core,80,85,80,85,INSTALL NOW,Verified install; 486 skills; beta OpenCode adapter,high
+superpowers-plugin,plugin,superpowers,general,90,25%,keep for unique skills,85,90,85,90,RETAIN EXISTING,223 skills; brainstorming/TDD unique,high
+ponytail-plugin,plugin,ponytail,general,75,25%,keep YAGNI audit,70,75,75,75,RETAIN EXISTING,6 skills; ponytail-audit unique,medium
+atelier-plugin,plugin,atelier,domain-router,70,25%,keep router dispatch,75,70,70,70,RETAIN EXISTING,8 routers; web/video/seo/backend/payments/security/vibe-code/ship-it,high
+claude-mem-plugin,plugin,claude-mem,knowledge,70,25%,keep memory unique,65,70,75,70,RETAIN EXISTING,Obsidian/memory unique,medium
+robloxstudio,mcp,robloxstudio,domain-router,80,25%,keep Roblox automation,80,85,80,80,RETAIN EXISTING,Studio automation unique,high
+weppy-roblox,mcp,weppy-roblox,domain-router,80,25%,keep Studio automation,75,80,80,75,RETAIN EXISTING,Studio automation unique,high
+chrome-devtools,mcp,chrome-devtools,debugging,80,25%,keep browser perf,75,80,85,75,RETAIN EXISTING,Browser debugging unique,high
+bitwize-music-mcp,mcp,bitwize-music-mcp,music,90,25%,keep music pipeline,85,90,90,85,RETAIN EXISTING,Music production unique,high
+playwright,mcp,playwright,automation,75,25%,keep browser automation,70,80,75,70,RETAIN EXISTING,Browser automation unique,high
+computer-use,mcp,computer-use,automation,70,25%,keep desktop autom,65,70,70,70,RETAIN EXISTING,Desktop autom unique,high
+uia-mcp,mcp,uia-mcp,automation,70,25%,keep Windows UI auto,65,70,75,70,RETAIN EXISTING,Windows UI unique,medium
+magicui,mcp,magicui,ui-assets,60,25%,keep UI assets,50,60,60,60,RETAIN AS OPTIONAL,UI component library,low
+21st-dev,mcp,21st,disabled,0,0,DO NOT ENABLE,0,0,0,0,DO NOT INSTALL,API_KEY_21ST required,high
+plan,command,plan,planning,85,25%,consolidate with Superpowers make-plan,80,85,80,85,CONSOLIDATE,Use ECC /plan; keep Superpowers brainstorming,high
+tdd,command,tdd,TDD,85,25%,replace Superpowers td,80,85,80,85,CONSOLIDATE,Use ECC /tdd; keep Superpowers td for reference,high
+code-review,command,code-review,review,85,25%,replace Superpowers review,80,85,80,85,CONSOLIDATE,Use ECC /code-review; keep Superpowers review skills,high
+security,command,security,security,85,25%,complement CS agents,75,85,80,85,CONSOLIDATE,ECC security + CS security both kept,high
+build-fix,command,build-fix,build,80,25%,new capability,70,75,75,70,INSTALL NOW,Unique ECC build-fix,high
+make-plan,skill,make-plan,planning,80,20%,keep Superpowers make-plan,75,80,75,75,RETAIN EXISTING,Superpowers make-plan + ECC /plan,medium
+brainstorming,skill,brainstorming,planning,75,20%,keep before creative work,70,75,70,70,RETAIN EXISTING,Required before creative per superpowers,medium
+systematic-debugging,skill,systematic-debugging,debugging,80,20%,keep bug methodology,75,80,75,75,RETAIN EXISTING,Superpowers debugging,medium
+verification-before-completion,skill,verification-before-completion,gates,75,20%,keep pre-commit gate,70,70,75,70,RETAIN EXISTING,Superpowers gate,medium
+using-superpowers,skill,using-superpowers,startup,70,20%,keep session startup,65,70,70,70,RETAIN EXISTING,Superpowers startup,medium
+ponytail,skill,ponytail,coding-audit,70,20%,keep YAGNI audit,65,70,70,70,RETAIN EXISTING,Ponytail YAGNI audit,medium
+ponytail-audit,skill,ponytail-audit,coding-audit,75,20%,keep audit rank,70,75,70,70,RETAIN EXISTING,Ponytail ranked audit,medium
+web-design,skill,web-design,domain-router,85,20%,keep Atelier router,80,85,80,80,RETAIN EXISTING,Atelier web-design router,high
+video-production,skill,video-production,domain-router,85,20%,keep Atelier router,80,85,80,80,RETAIN EXISTING,Atelier video-router,high
+seo,skill,seo,domain-router,85,20%,keep Atelier router,80,85,80,80,RETAIN EXISTING,Atelier SEO router,high
+backend,skill,backend,domain-router,85,20%,keep Atelier router,80,85,80,80,RETAIN EXISTING,Atelier backend-router,high
+payments,skill,payments,payments,75,20%,keep Stripe router,70,75,70,70,RETAIN EXISTING,Superpowers payments,medium
+animate,skill,animate,animation,80,20%,keep Emil philosophy,75,80,75,70,RETAIN EXISTING,Emil Kowalski animate,medium
+review-animations,skill,review-animations,animation,80,20%,keep animation audit,75,80,75,70,RETAIN EXISTING,Emil Kowalski review,medium
+hyperframes,skill,hyperframes,video,85,20%,keep HyperFrames,80,85,80,75,RETAIN EXISTING,HyperFrames video,high
+img2threejs,skill,img2threejs,3d,65,20%,keep 3D generation,60,65,60,60,RETAIN EXISTING,3D model gen,medium
+impeccable,skill,impeccable,design-polish,75,20%,keep polish unique,70,75,70,70,RETAIN EXISTING,Emil polish,medium
+wiki,skill,wiki,knowledge,65,20%,keep Obsidian unique,60,65,70,60,RETAIN EXISTING,Obsidian knowledge,medium
+mem-search,skill,mem-search,knowledge,60,20%,keep memory search,55,60,65,55,RETAIN EXISTING,claude-mem search,low
+wiki-fold,skill,wiki-fold,knowledge,55,20%,keep log rollup,50,55,55,50,RETAIN EXISTING,wiki log rollup,low
+wiki-ingest,skill,wiki-ingest,knowledge,55,20%,keep source ingest,50,55,55,50,RETAIN EXISTING,wiki source ingest,low
+wiki-lint,skill,wiki-lint,knowledge,55,20%,keep wiki audit,50,55,55,50,RETAIN EXISTING,wiki lint,low
+wiki-mode,skill,wiki-mode,knowledge,55,20%,keep vault mode,50,55,55,50,RETAIN EXISTING,wiki mode config,low
+wiki-query,skill,wiki-query,knowledge,55,20%,keep vault query,50,55,55,50,RETAIN EXISTING,wiki query,low
+wiki-retrieve,skill,wiki-retrieve,knowledge,55,20%,keep vault retrieve,50,55,55,50,RETAIN EXISTING,wiki retrieval,low
+review-animations,skill,review-animations,animation,80,20%,keep animation audit,75,80,75,70,RETAIN EXISTING,Emil Kowalski review,medium
+write-swift,skill,write-swift,swift,60,20%,keep Swift guides,55,60,55,55,RETAIN EXISTING,Swift guides,low
+visual-research,skill,visual-research,research,70,20%,keep design research,65,70,65,65,RETAIN EXISTING,Design research,medium
+watch,skill,watch,video,65,20%,keep video watch,60,65,60,60,RETAIN EXISTING,Video watch,low
+web-design,skill,web-design,domain-router,85,20%,keep Atelier router,80,85,80,80,RETAIN EXISTING,Atelier web router,high
+what-the,skill,what-the,what-the,40,20%,keep plain-English break,35,40,35,35,RETAIN EXISTING,Plain English,low
+wowerpoint,skill,wowerpoint,slides,50,20%,keep PDF slides,45,50,45,45,RETAIN EXISTING,PDF slide deck,low
+writing-plans,skill,writing-plans,planning,75,20%,keep plan method,70,75,70,70,RETAIN EXISTING,Superpowers planning,medium

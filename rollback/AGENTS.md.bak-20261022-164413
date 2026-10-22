@@ -1,0 +1,28 @@
+# Claude-Mem Memory Context
+
+<claude-mem-context>
+# Memory Context from Past Sessions
+
+*No context yet. Complete your first session and context will appear here.*
+
+Use claude-mem search tools for manual memory queries.
+
+## PC & Browser Control
+
+Three MCP servers grant browser and full-desktop control. Prefer the most specific tool for the job.
+
+| Task | Use |
+|---|---|
+| Tabs, forms, scraping, general browsing | `playwright` (browser_* tools) |
+| Slow pages, Core Web Vitals, memory leaks, CSS debugging | `chrome-devtools` (trace, lighthouse, heapsnapshot) |
+| Clicking native Windows controls by name | `uia-mcp` (uia_find_name, uia_action) |
+| Anything non-accessible (canvas, games, remote desktop) | `computer-use` (screenshot, click, type) |
+
+`playwright` uses a persistent profile — logins and cookies survive between sessions.
+
+## Parallelism
+
+When a request needs **more than two tasks**, branch the work instead of running it serially. Start long, blocking work (model/dependency installs, renders, downloads, transcription) in the background and immediately continue with independent work — never sit idle waiting on a long install when the next step does not depend on it. Prefer `task` with `subagent_type: "general"` for a genuinely independent branch, and batch independent tool calls in a single message.
+
+These can click and type into any window, including logged-in accounts, with no confirmation step. Confirm with the user before acting on anything irreversible (purchases, deletes, sending, posting). Prefer `playwright`/`uia-mcp` over raw pixel-clicking whenever possible — they target real elements and are far more reliable.
+</claude-mem-context>
